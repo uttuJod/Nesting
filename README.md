@@ -11,9 +11,9 @@ Laminated Additive Manufacturing (LOM) slices 3D models into 2D layers which are
 ---
 
 ## 🗂️ Project Structure
-input_svgs/ # Raw sliced layers (SVG format)  
-output_svgs/ # Normalized, rotated SVGs  
-output_bmps/ # Preprocessed BMPs for overlap checking  
+input_svgs # Raw sliced layers (SVG format)  
+output_svgs # Normalized, rotated SVGs  
+output_bmps # Preprocessed BMPs for overlap checking  
 svg_rotator.py # Preprocesses SVGs: rotation + BMP conversion  
 svg_placer.py # Assembles final SVG layout from GA output  
 FitnessEvaluator.cs # External evaluator (C# + OpenCV)  
