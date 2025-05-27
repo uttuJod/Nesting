@@ -11,15 +11,17 @@ Laminated Additive Manufacturing (LOM) slices 3D models into 2D layers which are
 ---
 
 ## 🗂️ Project Structure
-├── input_svgs/ # Raw sliced layers (SVG format)
-├── output_svgs/ # Normalized, rotated SVGs
-├── output_bmps/ # Preprocessed BMPs for overlap checking
-├── svg_rotator.py # Preprocesses SVGs: rotation + BMP conversion
-├── svg_placer.py # Assembles final SVG layout from GA output
-├── FitnessEvaluator.cs # External evaluator (C# + OpenCV)
-├── GeneticAlgorithm.hl # HeuristicLab setup file
-├── README.md # Project description
-└── /docs # PDF documentation and paper
+input_svgs/ # Raw sliced layers (SVG format)  
+output_svgs/ # Normalized, rotated SVGs  
+output_bmps/ # Preprocessed BMPs for overlap checking  
+svg_rotator.py # Preprocesses SVGs: rotation + BMP conversion  
+svg_placer.py # Assembles final SVG layout from GA output  
+FitnessEvaluator.cs # External evaluator (C# + OpenCV)  
+GeneticAlgorithm.hl # Heuristically setup file  
+README.md # Project description  
+
+---
+
 ## 🔁 Workflow Summary
 
 1. **Slice 3D Model** into `n` SVG layers (e.g., from Fusion360 or Blender).
